@@ -26,21 +26,9 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "d712c27fffdf7ddb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily/2023-09-03.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/2023-09-03.md",
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/2023-09-03.md",
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/2023-09-03.md"
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md"
               }
             }
           }
@@ -186,8 +174,9 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "d712c27fffdf7ddb",
+  "active": "570337cf3e1e84f9",
   "lastOpenFiles": [
+    "Daily/2023-09-03.md",
     "Notes/develop/NextJS/デプロイ(AWS).md",
     "Notes/develop/その他/Azure CLI のインストールと初期設定.md",
     "Notes/develop/その他/AWS CLI のインストールと初期設定.md",
@@ -195,7 +184,6 @@
     "Notes/develop/その他",
     "Notes/develop/NextJS",
     "Notes/develop/02_WindowsでLinux開発環境を構築する.md",
-    "Daily/2023-09-03.md",
     "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
     "Notes/リンク集.md",
     "Notes/develop/04_SpringBootの構築手順.md",
