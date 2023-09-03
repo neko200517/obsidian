@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/Obsidian_Tips.md",
                 "mode": "source",
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/Obsidian_Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/Obsidian_Tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md"
+                "file": "Notes/Obsidian_Tips.md"
               }
             }
           }
@@ -163,40 +163,40 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:クイックスイッチャーを開く": false,
-      "graph:グラフビューを開く": false,
-      "canvas:新規キャンバスを作成": false,
-      "daily-notes:今日のデイリーノートを開く": false,
-      "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-memos:Memos": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-memos:Memos": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "570337cf3e1e84f9",
   "lastOpenFiles": [
-    "Daily/2023-09-03.md",
+    "Notes/リンク集.md",
     "Notes/develop/NextJS/デプロイ(AWS).md",
+    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
+    "Notes/Obsidian_Tips.md",
+    "Notes/connect/DB.md",
+    "Notes/connect/Azure.md",
+    "Notes/connect/AWS.md",
+    "Daily/2023-09-03.md",
     "Notes/develop/その他/Azure CLI のインストールと初期設定.md",
     "Notes/develop/その他/AWS CLI のインストールと初期設定.md",
-    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
     "Notes/develop/その他",
     "Notes/develop/NextJS",
     "Notes/develop/02_WindowsでLinux開発環境を構築する.md",
-    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
-    "Notes/リンク集.md",
     "Notes/develop/04_SpringBootの構築手順.md",
     "Notes/develop/01_パッケージマネージャの導入(Scoop).md",
     "Notes/develop/03_Azure Container Registoryを作成する.md",
-    "Notes/connect/Azure.md",
     "Notes/develop/FastAPIチュートリアル",
     "Daily/2023-08-30.md",
-    "Notes/Obsidian_Tips.md",
     "Daily/2023-08-28.md",
     "Daily/2023-08-25.md",
-    "Notes/connect/DB.md",
-    "Notes/connect/AWS.md",
     "Notes/develop",
     "Notes/接続情報_DB.md",
     "Notes/接続情報_AWS.md",
