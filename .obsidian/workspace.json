@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "7a58ed83b9bc38dd",
+    "type": "split",
+    "children": [
+      {
+        "id": "efe2af016bd33b77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "94321d8ce68f4dc9",
+            "type": "leaf",
+            "state": {
+              "type": "memos_view",
+              "state": {}
+            }
+          },
+          {
+            "id": "570337cf3e1e84f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d712c27fffdf7ddb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/2023-09-03.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2ad2717f7323c390",
+    "type": "split",
+    "children": [
+      {
+        "id": "8294482751b3157f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa542baaceb61489",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "946d737e38fc47ed",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "構成",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aa9da504d8170a55",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dbf75e24cb0798eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf0fd7bb2d30e9ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ef29e322c74e303",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Daily/2023-09-03.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "dd339e68db9350df",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "5f0b7325c7f04bc1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "a13e68d66f81672e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Daily/2023-09-03.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0962f1196973784",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8c30b1ebabebcb91",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Daily/2023-09-03.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-memos:Memos": false
+    }
+  },
+  "active": "d712c27fffdf7ddb",
+  "lastOpenFiles": [
+    "Notes/develop/NextJS/デプロイ(AWS).md",
+    "Notes/develop/その他/Azure CLI のインストールと初期設定.md",
+    "Notes/develop/その他/AWS CLI のインストールと初期設定.md",
+    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
+    "Notes/develop/その他",
+    "Notes/develop/NextJS",
+    "Notes/develop/02_WindowsでLinux開発環境を構築する.md",
+    "Daily/2023-09-03.md",
+    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+    "Notes/リンク集.md",
+    "Notes/develop/04_SpringBootの構築手順.md",
+    "Notes/develop/01_パッケージマネージャの導入(Scoop).md",
+    "Notes/develop/03_Azure Container Registoryを作成する.md",
+    "Notes/connect/Azure.md",
+    "Notes/develop/FastAPIチュートリアル",
+    "Daily/2023-08-30.md",
+    "Notes/Obsidian_Tips.md",
+    "Daily/2023-08-28.md",
+    "Daily/2023-08-25.md",
+    "Notes/connect/DB.md",
+    "Notes/connect/AWS.md",
+    "Notes/develop",
+    "Notes/接続情報_DB.md",
+    "Notes/接続情報_AWS.md",
+    "Notes/接続情報_Azure.md",
+    "Notes/connect",
+    "Daily/2023-08-24.md",
+    "Daily/delete.md",
+    "Notes/はじめてのObsidian.md",
+    "Notes/テキストb.md",
+    "Notes/new_file.md",
+    "Conifg/Extra/Pasted image 20230824200717.png",
+    "Conifg/Extra/Pasted image 20230824200606.png",
+    "Conifg/Extra/Pasted image 20230824200534.png",
+    "Excalidraw",
+    "Outputs",
+    "Conifg/Templates",
+    "Conifg/Extra",
+    "Conifg"
+  ]
+}
