@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Obsidian_Tips.md",
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
                 "mode": "source",
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Obsidian_Tips.md",
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Obsidian_Tips.md",
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Obsidian_Tips.md"
+                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md"
               }
             }
           }
@@ -169,18 +169,19 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-memos:Memos": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-memos:Memos": false
     }
   },
   "active": "570337cf3e1e84f9",
   "lastOpenFiles": [
+    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
+    "Daily/2023-09-04.md",
+    "Notes/Obsidian_Tips.md",
     "Notes/リンク集.md",
     "Notes/develop/NextJS/デプロイ(AWS).md",
     "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
-    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
-    "Notes/Obsidian_Tips.md",
     "Notes/connect/DB.md",
     "Notes/connect/Azure.md",
     "Notes/connect/AWS.md",
@@ -206,7 +207,6 @@
     "Daily/delete.md",
     "Notes/はじめてのObsidian.md",
     "Notes/テキストb.md",
-    "Notes/new_file.md",
     "Conifg/Extra/Pasted image 20230824200717.png",
     "Conifg/Extra/Pasted image 20230824200606.png",
     "Conifg/Extra/Pasted image 20230824200534.png",
