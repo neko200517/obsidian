@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
                 "mode": "source",
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md"
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md"
               }
             }
           }
@@ -176,12 +176,20 @@
   },
   "active": "570337cf3e1e84f9",
   "lastOpenFiles": [
-    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
-    "Daily/2023-09-04.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/03_SQLAlchemy.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
+    "Notes/develop/その他/PostgreSQL の初期設定.md",
+    "Notes/develop/01_パッケージマネージャの導入(Scoop).md",
+    "Notes/develop/04_SpringBootの構築手順.md",
     "Notes/Obsidian_Tips.md",
     "Notes/リンク集.md",
-    "Notes/develop/NextJS/デプロイ(AWS).md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/02_FastAPIでモデルを用意.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/01_DB設計.md",
     "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
+    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
+    "Notes/develop/NextJS/デプロイ(AWS).md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム",
+    "Daily/2023-09-04.md",
     "Notes/connect/DB.md",
     "Notes/connect/Azure.md",
     "Notes/connect/AWS.md",
@@ -191,8 +199,6 @@
     "Notes/develop/その他",
     "Notes/develop/NextJS",
     "Notes/develop/02_WindowsでLinux開発環境を構築する.md",
-    "Notes/develop/04_SpringBootの構築手順.md",
-    "Notes/develop/01_パッケージマネージャの導入(Scoop).md",
     "Notes/develop/03_Azure Container Registoryを作成する.md",
     "Notes/develop/FastAPIチュートリアル",
     "Daily/2023-08-30.md",
@@ -201,19 +207,13 @@
     "Notes/develop",
     "Notes/接続情報_DB.md",
     "Notes/接続情報_AWS.md",
-    "Notes/接続情報_Azure.md",
     "Notes/connect",
-    "Daily/2023-08-24.md",
-    "Daily/delete.md",
-    "Notes/はじめてのObsidian.md",
-    "Notes/テキストb.md",
     "Conifg/Extra/Pasted image 20230824200717.png",
     "Conifg/Extra/Pasted image 20230824200606.png",
     "Conifg/Extra/Pasted image 20230824200534.png",
     "Excalidraw",
     "Outputs",
     "Conifg/Templates",
-    "Conifg/Extra",
-    "Conifg"
+    "Conifg/Extra"
   ]
 }

@@ -243,3 +243,26 @@ class Item(BaseModel):
     price: int = Field(ge=0)
     tax: Optional[float] = None 
 ```
+
+### CORS 対応
+
+javascriptから呼び出すために以下の内容を追記する。
+
+```python
+# app.py 
+
+# 省略
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = {"http://localhost:3000"} # すべてを許可する場合"**"とする
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# 省略
+```
