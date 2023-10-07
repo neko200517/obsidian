@@ -20,21 +20,22 @@
 VSCodeの拡張機能または spring initializr[https://start.spring.io/] でgradleプロジェクトを新規作成する。
 
 例）
-###### Project
-- Project: Gradle - Groovy
-- Language: Java 
-- Spring Boot: 2.7.15
-- Project Metadata:
-	- Group: com.example
-	- Artifact: demo
-	- Name: demo 
-	- Description: Demo project for Spring Boot 
-	- Package name: com.example.demo
-	- Packaging: Jar
-	- Java: 11
-###### Dependencies
-- Sprint Web
-- Lombok
+- Project設定
+	- Project: Gradle - Groovy
+	- Language: Java 
+	- Spring Boot: 2.7.15
+	- Project Metadata:
+		- Group: com.example
+		- Artifact: demo
+		- Name: demo 
+		- Description: Demo project for Spring Boot 
+		- Package name: com.example.demo
+		- Packaging: Jar
+		- Java: 11
+
+- Dependencies
+	- Sprint Web
+	- Lombok
 
 作成したプロジェクトをserverフォルダに入れる。
 
@@ -53,8 +54,9 @@ VSCodeの拡張機能または spring initializr[https://start.spring.io/] でgr
 
 開発用のDockerイメージを作成する。
 appサーバにopenjdk11を、dbサーバにpostgreSQL13.1をインストールする。
-###### ./docker-compose.yml
+
 ```yml
+# ./docker-compose.yml
 version: '3.6'
 services:
   app:
@@ -89,8 +91,9 @@ volumes:
 
 以下はusersテーブルを作成して初期データを投入し、ロールに権限を設定しているサンプルのSQLとなる。
 
-###### ./forDocker/db/initdb/sample.sql
 ```sql
+-- ./forDocker/db/initdb/sample.sql 
+
 -- usresテーブルを作成
 CREATE TABLE users (
 	user_id character varying(16) NOT NULL
@@ -183,8 +186,10 @@ exit
 ### デプロイ用のDockerfileを作成する
 
 ここまで上手く構築と動作検証が終わったらデプロイ用にDockerfileを作成する。
-###### ./server/Dockerfile
+
 ```Dockerfile
+# ./server/Dockerfile 
+
 # from the base image of a jdk 11 container on Ubuntu 20.04.
 FROM adoptopenjdk/openjdk11:x86_64-ubuntu-jdk-11.0.18_10-slim
 

@@ -1,59 +1,10 @@
-## プロジェクトの作成
+## API を呼ぶための汎用関数の作成
 
-```sh
-npx create-next-app@latest
-```
-
-質問されるが、すべてデフォルトで作成する
-
-## 通信ライブラリのインストール
-
-```sh
-npm i -D axios
-npm i -D swr
-```
-
-## 時間操作のライブラリ
-
-```sh
-npm i -D dayjs
-```
-
-## 文字列をhtmlに変換するライブラリ
-
-```sh
-npm i -D html-react-parser
-```
-
-## エラーバウンダリー
-
-```sh
-npm i -D react-error-boundary
-```
-
-## tailwindcssを設定順をソートしてくれるライブラリ 
-
-```sh
-npm i -D prettier-plugin-tailwindcss
-```
-
-プロジェクトのルートに .prettierrc を作成し、以下の設定で保存する
-
-```json
-{
-  "plugins": ["prettier-plugin-tailwindcss"], // プラグインの有効化
-  
-  // 以下は保存時にシングルクォートの変換がうまく動作しないときに追記する
-  "singleQuote": true,
-  "jsxSingleQuote": true
-}
-```
-
-## axiosにルートディレクトリなどを設定 
-
-fetcher.ts を作成し、以下の内容で保存
+axios を使用したセットアップ、CRUD操作用の関数などを作成。
 
 ```ts
+// api.ts
+
 import axiosbase, { AxiosResponse } from 'axios';
 import { AppConfig } from '../AppConfig';
 
@@ -166,31 +117,12 @@ export const UserListPage = () => {
 };
 ```
 
-## Suspense 
+## muttate でデータの再取得
 
-非同期API取得中のローディングを実現するためにSuspenseコンポーネントを使用している。
-useSWRと組み合わせるには useSWR 利用時に ``` {suspense: true} ``` オプションを付与する。
-ただしコンポーネント内にデータフェッチを閉じ込める必要があるため state が頻繁に変化するページでは通信が頻繁に発生するため注意。
+データを作成/更新して画面表示を更新するときなどに利用する。
 
 ```tsx
-	// 省略
-      <Suspense fallback={<div>Loading...</div>}>
-        <UserList />
-      </Suspense>
-	//省略
-```
-
-## ErrorBoundary 
-
-Suspenseコンポーネントと非同期処理の例外処理をフックするために必要。ErrorBoundary で囲んだ子コンポーネントで発生したすべての例外処理をフックして fallback で代替画面を表示することができる。
-
-```tsx
-  // 省略
-  return (
-    <ErrorBoundary fallback={<div>Error</div>}>
-      <Suspense fallback={<div>Loading...</div>}>
-        <UserList />
-      </Suspense>
-    </ErrorBoundary>
-  );
+// 中略
+mutate('/users');
+// 中略
 ```

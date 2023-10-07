@@ -1,0 +1,5 @@
+- ES7 + React/Redux/React-Native snippests
+- Auto Rename Tag
+- Auto Close Tag 
+- HTML CSS Support
+- Prettier

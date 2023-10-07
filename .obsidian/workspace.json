@@ -21,14 +21,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/03_01_SQLAlchemy.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "56628fb4e57ed629",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_01_FastAPI_エラーハンドリング.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1a39a0bc22902903",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/develop/Next.js13_マイクロブログの作成/02_マイクロブログを構築（デザイン）/01_layout.tsxにヘッダーとフッターを追加.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f76bbce104fbd1be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/08_ブログ本文に文字数制限を設ける.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -57,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "構成",
+                "query": "clamp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +110,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 390.5
   },
   "right": {
     "id": "dbf75e24cb0798eb",
@@ -94,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
+                "file": "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/08_ブログ本文に文字数制限を設ける.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
+                "file": "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/08_ブログ本文に文字数制限を設ける.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +187,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md"
+                "file": "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/08_ブログ本文に文字数制限を設ける.md"
+              }
+            }
+          },
+          {
+            "id": "52a6ba34aeacba38",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -174,46 +221,46 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "570337cf3e1e84f9",
+  "active": "f76bbce104fbd1be",
   "lastOpenFiles": [
-    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/03_SQLAlchemy.md",
-    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_Nextjs.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/02_マイクロブログを構築（デザイン）/02_ブログ共通ヘッダーを作成する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/11_記事削除APIを作成する(Next13).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/08_記事一覧取得APIを作成する(Next13).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/04_Supabase用API関数を作成する(Next12以前).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/05_詳細ページの取得APIを作成する(Next12以前).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/07_記事削除APIを作成する(Next12以前).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/06_記事作成APIを作成する(Next12以前).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/09_記事取得APIを作成する(Next13).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/10_記事作成APIを作成する(Next13).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/03_Supabaseでテーブルを作成する.md",
+    "Notes/develop/NextJS13/04_マイクロブログを構築（supabase）/05_記事一覧取得APIを実行する(Next12以前).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/02_Supabaseの初期セットアップ.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/03_APIを叩いて全記事をブラウザに表示する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）/01_Supabaseでデータベースを作成する.md",
+    "Notes/develop/NextJS13/04_マイクロブログを構築（supabase）/Untitled",
     "Notes/develop/その他/PostgreSQL の初期設定.md",
-    "Notes/develop/01_パッケージマネージャの導入(Scoop).md",
-    "Notes/develop/04_SpringBootの構築手順.md",
-    "Notes/Obsidian_Tips.md",
-    "Notes/リンク集.md",
-    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/02_FastAPIでモデルを用意.md",
-    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/01_DB設計.md",
-    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門.md",
-    "Notes/develop/FastAPIチュートリアル/02_デプロイ(AWS).md",
-    "Notes/develop/NextJS/デプロイ(AWS).md",
+    "Notes/develop/Next.js13_マイクロブログの作成/04_マイクロブログを構築（supabase）",
+    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門/01_FastAPI超入門.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/01_01_DB設計.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/04_01_FastAPI_エラーハンドリング.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/03_01_SQLAlchemy.md",
+    "Notes/develop/FastAPIチュートリアル/03_会議室予約システム/02_01_FastAPI_モデルの用意.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/10_404NotFoundページを作成する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/15_ブログ削除ボタンを実装する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/14_ブログ削除のAPIを作成する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/13_投稿時のローディングアニメーションを実装する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/12_APIを叩いて新規ブログを投稿する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）/11_ブログ投稿用APIを作成する.md",
+    "Notes/develop/Next.js13_マイクロブログの作成/03_マイクロブログを構築（json-server）",
+    "Notes/develop/Next.js13_マイクロブログの作成/02_マイクロブログを構築（デザイン）",
+    "Notes/develop/Next.js13_マイクロブログの作成/01_Next.js13の開発環境を構築",
+    "Notes/develop/SpringBoot構築からAzureにデプロイする手順",
+    "Notes/develop/FastAPIチュートリアル/02_デプロイ",
+    "Notes/develop/FastAPIチュートリアル/01_FastAPI超入門",
     "Notes/develop/FastAPIチュートリアル/03_会議室予約システム",
-    "Daily/2023-09-04.md",
-    "Notes/connect/DB.md",
-    "Notes/connect/Azure.md",
-    "Notes/connect/AWS.md",
-    "Daily/2023-09-03.md",
-    "Notes/develop/その他/Azure CLI のインストールと初期設定.md",
-    "Notes/develop/その他/AWS CLI のインストールと初期設定.md",
     "Notes/develop/その他",
-    "Notes/develop/NextJS",
-    "Notes/develop/02_WindowsでLinux開発環境を構築する.md",
-    "Notes/develop/03_Azure Container Registoryを作成する.md",
-    "Notes/develop/FastAPIチュートリアル",
-    "Daily/2023-08-30.md",
-    "Daily/2023-08-28.md",
-    "Daily/2023-08-25.md",
-    "Notes/develop",
-    "Notes/接続情報_DB.md",
-    "Notes/接続情報_AWS.md",
-    "Notes/connect",
     "Conifg/Extra/Pasted image 20230824200717.png",
     "Conifg/Extra/Pasted image 20230824200606.png",
-    "Conifg/Extra/Pasted image 20230824200534.png",
-    "Excalidraw",
-    "Outputs",
-    "Conifg/Templates",
-    "Conifg/Extra"
+    "Conifg/Extra/Pasted image 20230824200534.png"
   ]
 }

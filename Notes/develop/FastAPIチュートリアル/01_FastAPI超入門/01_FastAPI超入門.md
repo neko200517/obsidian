@@ -20,6 +20,7 @@ Ctrl + Shift + P でVSCodeの設定ファイルを開き、次の設定を追加
     "editor.formatOnSave": true
   },
   "python.formatting.provider": "none",
+  "python.analysis.typeCheckingMode": "basic",
 }
 ```
 
@@ -79,11 +80,11 @@ uvicorn main:app --reload
 
 自動でAPIドキュメントが生成される機能が組み込まれているため、以下のURLを入力することで簡単にドキュメントを閲覧可能。
 
-#### docs
-http://localhost:8000/docs 
+- docs
+	- http://localhost:8000/docs 
 
-#### redoc
-http://localhost:8000/redoc
+- redoc
+	- http://localhost:8000/redoc
 
 ## パスパラメータ
 

@@ -1,12 +1,6 @@
-## SQLAlchemy のインストール
-
-```sh
-pip install sqlalchemy
-```
-
 ## ファイル構成
 
-sql_app ディレクトリを作成し、以下のようなファイルを追加する。
+sql_app ディレクトリを作成し、以下のようにファイルを作成する。
 
 ```sh
 my-app
@@ -17,6 +11,12 @@ my-app
 │   ├── schemas.py
 │   └── crud.py
 └── app.py
+```
+
+## SQLAlchemy のインストール
+
+```sh
+pip install sqlalchemy
 ```
 
 ## database.py に接続情報などを記述する

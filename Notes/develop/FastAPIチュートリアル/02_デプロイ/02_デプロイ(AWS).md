@@ -156,7 +156,7 @@ pip install mangum
 
 serverless-python-requirements は requirements.txt のパッケージをインストールしてzipに固めてデプロイしてくれるので以下のコマンドでリストを出力する。
 
-==新しいパッケージをインストールしたらその都度実行すること==
+==新しいパッケージをインストールしたらデプロイ前に実行すること==
 
 ```shell
 pip freeze > requirements.txt
@@ -233,7 +233,7 @@ functions:
 
 あらかじめaws cliのインストールとクレデンシャルの設定を済ませておくこと。
 
-==Windows環境だとdockerが入ってない場合デプロイできないため、[[02_WindowsでLinux開発環境を構築する]] を参考にLinux環境でデプロイすること。==
+==Windows環境だとdockerが入ってない場合デプロイできないため、[[02_01_WindowsでLinux開発環境を構築する]] を参考にLinux環境でデプロイすること。==
 
 ```shell
 npx sls deploy --stage dev
