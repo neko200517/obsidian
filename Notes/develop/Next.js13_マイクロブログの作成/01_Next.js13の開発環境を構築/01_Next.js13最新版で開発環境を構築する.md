@@ -1,7 +1,7 @@
 ## 構築
 
 ```sh
-npx create-app-nextjs@latest
+npx create-next-app@latest
 ```
 
 基本的にデフォルト設定で進めていく。srcディレクトリの作成のみyesとした。

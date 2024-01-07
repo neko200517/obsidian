@@ -125,7 +125,7 @@ export const Button = ({ label }: ButtonProps) => {
 }
 ```
 
-## Storrybookの起動
+## Storybookの起動
 
 ```sh
 npm run storybook
