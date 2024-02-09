@@ -77,6 +77,27 @@ docker-compose -v
 sudo service docker start
 ```
 
+### Dockerサービスが立ち上がらなかった場合
+
+#### ログの確認
+
+```bash
+sudo cat /var/log/docker.log
+```
+
+以下のようにネットワークエラーで立ち上がらなかった場合
+
+```log
+failed to start daemon: Error initializing network controller...
+```
+
+#### 設定を変更する
+
+```bash
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+```
+
 ## Docker のインストール（手動）
 
 https://zenn.dev/dynamitecoolguy/articles/7c7c2ca06553e5
