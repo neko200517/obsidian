@@ -48,6 +48,26 @@ wsl --shutdown
 docker run hello-world
 ```
 
+### docker-compoesのインストール
+
+```bash
+sudo curl -L https://github.com/docker/compose/releases/download/v2.24.5/docker-compo
+se-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+### docker-composeがインストールされているかを確認
+
+```bash
+docker-compose -v
+```
+
+### Dockerサービスを立ち上げる
+
+```bash
+sudo service docker start
+```
+
 ## Docker のインストール（手動）
 
 https://zenn.dev/dynamitecoolguy/articles/7c7c2ca06553e5
