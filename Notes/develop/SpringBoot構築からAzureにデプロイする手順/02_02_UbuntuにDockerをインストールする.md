@@ -2,6 +2,15 @@
 
 https://qiita.com/nujust/items/d7cd395baa0c5dc94fc5
 
+### 前提
+
+Dockerを使う場合、使いたい環境がデフォルトになっているかを確認し、そうでないならデフォルトに設定する。
+
+```sh
+wsl --list --verbose
+wsl --set-default Ubuntu_copy
+```
+
 ### インストール 
 
 ダウンロードしたスクリプトを実行するだけでインストール完了。
