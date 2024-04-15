@@ -1,0 +1,36 @@
+## list.html
+
+tableタグを使ってテーブル形式で表示
+
+```html
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タスク一覧</title>
+  </head>
+  <body>
+    <h1>タスク一覧</h1>
+    <a th:href="@{/}">トップページに戻る</a>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>概要</th>
+            <th>ステータス</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td th:text="${task.id}"></td>
+            <td th:text="${task.summary}"></td>
+            <td th:text="${task.status}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+```
