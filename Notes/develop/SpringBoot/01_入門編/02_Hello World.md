@@ -53,3 +53,12 @@ public class IndexController {
   }
 }
 ```
+
+## デバッグで起動
+
+VSCodeの機能で以下のエントリポイントで表示されるDebugボタンを押下する。
+その後Springの起動画面が表示されるのでブラウザでlocalhost:8080にアクセスすると画面が表示される。
+
+```java
+public static void main(String[] args)
+```
