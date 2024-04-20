@@ -1,4 +1,4 @@
-## resources/tasks/detail.html
+## resources/templates/tasks/detail.html
 
 タスク詳細画面のhtmlを作成
 

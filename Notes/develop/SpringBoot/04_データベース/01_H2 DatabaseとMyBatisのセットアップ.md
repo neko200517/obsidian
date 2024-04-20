@@ -21,6 +21,7 @@ spring.datasource.driver-class-name=org.h2.Driver
 spring.datasource.url=jdbc:h2:mem:todo
 spring.datasource.username=sa
 spring.datasource.passowrd=
+spring.sql.init.encoding=UTF-8
 ```
 
 ## H2データベースにアクセス

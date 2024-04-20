@@ -1,6 +1,6 @@
 ## com/example/todo/controller/task/TaskController.java 
 
-TaskEntity を TaskDTO に変換してビューに渡す
+@RequestMapping アノテーションを使うとルートパスが指定でき、@GetMapping や @PostMapping の記述をシンプルにすることができる。
 
 ```java
 package com.example.todo.controller.task;
@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.todo.service.task.TaskService;
 
@@ -16,11 +18,12 @@ import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequiredArgsConstructor
+@RequestMapping("/tasks")
 public class TaskController {
 
   private final TaskService taskService;
 
-  @GetMapping("/tasks")
+  @GetMapping
   public String list(Model model) {
     // List<TaskEntity> -> List<TaskDTO>
     var taskList = taskService.find()
@@ -32,7 +35,7 @@ public class TaskController {
     return "tasks/list";
   }
 
-  @GetMapping("/tasks/{id}")
+  @GetMapping("/{id}")
   public String showDetail(@PathVariable("id") long taskId, Model model) {
     // taskId -> TaskEntity
     var taskEntity = taskService.findById(taskId)
@@ -40,30 +43,16 @@ public class TaskController {
     model.addAttribute("task", TaskDTO.toDTO(taskEntity));
     return "tasks/detail";
   }
+
+  @GetMapping("/creationForm")
+  public String showCreationForm() {
+    return "tasks/form";
+  }
+
+  @PostMapping
+  public String postCreationForm(TaskForm form) {
+    taskService.create(form.toEntity());
+    return "redirect:/tasks";
+  }
 }
-```
-
-## resources/templates/tasks/detail.html
-
-受け取ったtaskを表示する。
-\+ や ' ' で文字列の連結が可能。
-
-```html
-<!DOCTYPE html>
-<html lang="ja" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>タスク詳細</title>
-  </head>
-  <body>
-    <h1>タスク詳細</h1>
-    <a th:href="@{/tasks}">タスク一覧</a>
-    <div th:object="${task}">
-      <h2 th:text="'#' + *{id} + ' ' + *{summary}"></h2>
-      <p th:text="*{status}"></p>
-      <pre th:text="*{description}"></pre>
-    </div>
-  </body>
-</html>
 ```

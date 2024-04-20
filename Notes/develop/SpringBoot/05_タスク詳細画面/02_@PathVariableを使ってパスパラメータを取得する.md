@@ -41,7 +41,7 @@ public class TaskController {
 }
 ```
 
-## resources/tasks/detail.html
+## resources/templates/tasks/detail.html
 
 taskIdを表示する
 

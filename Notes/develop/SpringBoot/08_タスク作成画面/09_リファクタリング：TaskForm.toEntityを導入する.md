@@ -1,6 +1,25 @@
-## com/example/todo/controller/task/TaskController.java 
+## com/example/todo/controller/task/TaskForm.java 
 
-TaskEntity を TaskDTO に変換してビューに渡す
+TaskFrom を TaskEntity に変換する関数を作成する
+
+```java
+package com.example.todo.controller.task;
+
+import com.example.todo.service.task.TaskEntity;
+import com.example.todo.service.task.TaskStatus;
+
+public record TaskForm(
+    String summary,
+    String description,
+    String status) {
+
+  public TaskEntity toEntity() {
+    return new TaskEntity(null, summary(), description(), TaskStatus.valueOf(status()));
+  }
+}
+```
+
+## com/example/todo/controller/task/TaskController.java 
 
 ```java
 package com.example.todo.controller.task;
@@ -9,6 +28,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.todo.service.task.TaskService;
 
@@ -40,30 +60,16 @@ public class TaskController {
     model.addAttribute("task", TaskDTO.toDTO(taskEntity));
     return "tasks/detail";
   }
+
+  @GetMapping("/tasks/creationForm")
+  public String showCreationForm() {
+    return "tasks/form";
+  }
+
+  @PostMapping("/tasks")
+  public String postCreationForm(TaskForm form) {
+    taskService.create(form.toEntity());
+    return "redirect:/tasks";
+  }
 }
-```
-
-## resources/templates/tasks/detail.html
-
-受け取ったtaskを表示する。
-\+ や ' ' で文字列の連結が可能。
-
-```html
-<!DOCTYPE html>
-<html lang="ja" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>タスク詳細</title>
-  </head>
-  <body>
-    <h1>タスク詳細</h1>
-    <a th:href="@{/tasks}">タスク一覧</a>
-    <div th:object="${task}">
-      <h2 th:text="'#' + *{id} + ' ' + *{summary}"></h2>
-      <p th:text="*{status}"></p>
-      <pre th:text="*{description}"></pre>
-    </div>
-  </body>
-</html>
 ```
