@@ -1,0 +1,94 @@
+## resources/templates/tasks/list.html 
+
+検索フォームをCardで囲う
+
+```html
+<!DOCTYPE html>
+<html
+  lang="ja"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layout/layout}"
+>
+  <head>
+    <title>タスク一覧</title>
+  </head>
+  <body>
+    <section layout:fragment="content">
+      <div>
+        <a th:href="@{/tasks/creationForm}" class="btn btn-primary">作成</a>
+      </div>
+
+      <div class="card">
+        <div class="card-header">検索</div>
+        <div class="card-body">
+          <form th:action="@{/tasks}" method="get">
+            <div class="form-group">
+              <label class="form-label" for="summarySearch">概要</label>
+              <input
+                class="form-control"
+                id="summarySearch"
+                name="summary"
+                placeholder="概要"
+                type="text"
+              />
+            </div>
+            <div class="form-group">
+              <div>
+                <label for="statusSearch" class="form-label">ステータス</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="statusSearchTodo"
+                  name="status"
+                  value="TODO"
+                />
+                <label for="statusSearchTodo">TODO</label>
+                <input
+                  type="checkbox"
+                  id="statusSearchDoing"
+                  name="status"
+                  value="DOING"
+                />
+                <label for="statusSearchDoing">DOING</label>
+                <input
+                  type="checkbox"
+                  id="statusSearchDone"
+                  name="status"
+                  value="DONE"
+                />
+                <label for="statusSearchDone">DONE</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">検索</button>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>概要</th>
+              <th>ステータス</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="task : ${taskList}" th:object="${task}">
+              <td>
+                <a th:href="@{/tasks/{id}(id=*{id})}" th:text="'#' + *{id}"></a>
+              </td>
+              <td>
+                <a th:href="@{/tasks/{id}(id=*{id})}" th:text="*{summary}"></a>
+              </td>
+              <td th:text="*{status}"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
+```
