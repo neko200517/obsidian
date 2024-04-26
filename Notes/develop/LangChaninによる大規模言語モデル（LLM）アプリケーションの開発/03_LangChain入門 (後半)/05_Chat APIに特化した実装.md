@@ -1,6 +1,5 @@
 ## ロールを明確にしたうえで実装 
 
-
 ```python
 from langchain_openai import ChatOpenAI
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
