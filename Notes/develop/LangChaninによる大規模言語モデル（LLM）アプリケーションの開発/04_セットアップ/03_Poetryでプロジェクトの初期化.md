@@ -11,7 +11,7 @@ poetry init
 name = "langchain-001"
 version = "0.1.0"
 description = ""
-authors = ["Jun Terayama <pam130901@gmail.com>"]
+authors = ["name <mail@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.11.3" # ←バージョンを指定
