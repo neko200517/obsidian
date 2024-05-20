@@ -1,9 +1,21 @@
-## authSliceの作成 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
 
-src/features/authSliceファイルを作成して、ログインしたユーザー情報を保存する
+## authSlice の作成
+
+src/features/authSlice ファイルを作成して、ログインしたユーザー情報を保存する
 
 ```bash
-mkdir features 
+mkdir features
 touch features/authSlice.js
 ```
 
@@ -78,9 +90,9 @@ export const selectProfile = (state) => state.auth.profile;
 export default authSlice.reducer;
 ```
 
-## Reducerの登録
+## Reducer の登録
 
-作成したReducerを登録する
+作成した Reducer を登録する
 
 ```bash
 mkdir src/app

@@ -1,7 +1,21 @@
-## APIの実装
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## API の実装
 
 ```ts
-// src/main.ts 
+// src/main.ts
 
 // 中略
 
@@ -16,10 +30,10 @@ app.post('/api/games', async (req, res) => {
 // 中略
 ```
 
-## クライアントの実装 
+## クライアントの実装
 
 ```js
-// static/main.js 
+// static/main.js
 
 // 中略
 

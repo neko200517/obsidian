@@ -1,6 +1,20 @@
-## Boardクラスの修正 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-初期化するためのBoardインスタンスを簡単に生成できるようにする。
+## Board クラスの修正
+
+初期化するための Board インスタンスを簡単に生成できるようにする。
 
 ```ts
 // src/domain/board.ts
@@ -25,7 +39,7 @@ const INITIAL_DISCS = [
 export const initialBoard = new Board(INITIAL_DISCS);
 ```
 
-## Turnクラスの修正 
+## Turn クラスの修正
 
 最初のターンのインスタンスを簡単に生成できるようにする。
 
@@ -38,12 +52,11 @@ export const initialBoard = new Board(INITIAL_DISCS);
 export const firstTurn = (gameId: number, endAt: Date) => {
   return new Turn(gameId, 0, Disc.Dark, undefined, initialBoard, endAt);
 };
-
 ```
 
-## GameServiceクラスの修正
+## GameService クラスの修正
 
-最初のターンの登録をturnRepositoryで実装。
+最初のターンの登録を turnRepository で実装。
 
 ```ts
 import { connectMySql } from '../dataaccess/connection';

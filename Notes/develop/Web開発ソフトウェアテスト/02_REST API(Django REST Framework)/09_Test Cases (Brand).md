@@ -1,4 +1,15 @@
-## Brandのテスト
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
+## Brand のテスト
 
 ```python
 from django.contrib.auth.models import User

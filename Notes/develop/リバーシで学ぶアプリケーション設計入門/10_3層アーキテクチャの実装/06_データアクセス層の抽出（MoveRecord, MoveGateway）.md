@@ -1,4 +1,18 @@
-## MoveRecordクラス
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## MoveRecord クラス
 
 ```bash
 touch dataaccess/moveRecord.ts
@@ -16,7 +30,7 @@ export class MoveRecord {
 }
 ```
 
-## MoveGatewayクラス
+## MoveGateway クラス
 
 ```bash
 touch dataaccess/moveGateway.ts

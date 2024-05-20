@@ -1,6 +1,18 @@
-## Segmentコンポーネントの作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
 
-Segmentの新規登録、更新、削除画面
+## Segment コンポーネントの作成
+
+Segment の新規登録、更新、削除画面
 
 ```ts
 // src/components/Segment.ts

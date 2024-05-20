@@ -1,3 +1,17 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## パッケージをインストール
 
 ```bash
@@ -43,7 +57,7 @@ npx ts-node .\src\main.ts
 http://localhost:3000/api/hello にアクセスし、
 
 ```json
-{"message": "Hello World"}
+{ "message": "Hello World" }
 ```
 
-が返ってきたらOK
+が返ってきたら OK

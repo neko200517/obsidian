@@ -1,6 +1,18 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
+
 ## Router
 
-scr/App.jsにルーティング機能を実装する
+scr/App.js にルーティング機能を実装する
 
 ```js
 import React from 'react';

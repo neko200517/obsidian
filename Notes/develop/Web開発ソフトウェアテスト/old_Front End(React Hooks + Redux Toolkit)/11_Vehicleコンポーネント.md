@@ -1,6 +1,18 @@
-## Vehicleコンポーネントの作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
 
-Vehicleの新規登録、更新、削除画面
+## Vehicle コンポーネントの作成
+
+Vehicle の新規登録、更新、削除画面
 
 ```js
 // src/components/Vehicle.js

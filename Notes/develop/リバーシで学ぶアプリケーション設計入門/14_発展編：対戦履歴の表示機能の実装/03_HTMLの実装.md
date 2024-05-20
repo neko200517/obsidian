@@ -1,7 +1,21 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 既存のファイルを移動
 
-staticディレクトリにgameフォルダを作成し、以前作成したhtml, js, cssを移動。
-トップページ用に新しいhtmlを作成。
+static ディレクトリに game フォルダを作成し、以前作成した html, js, css を移動。
+トップページ用に新しい html を作成。
 
 ```bash
 ./static
@@ -15,9 +29,9 @@ staticディレクトリにgameフォルダを作成し、以前作成したhtml
         style.css
 ```
 
-今までのhtmlは http://localhost:3000/game でアクセスすることができる。
+今までの html は http://localhost:3000/game でアクセスすることができる。
 
-## static/index.html 
+## static/index.html
 
 ```html
 <!DOCTYPE html>
@@ -67,7 +81,7 @@ staticディレクトリにgameフォルダを作成し、以前作成したhtml
 </html>
 ```
 
-## static/style.css 
+## static/style.css
 
 ```css
 body {

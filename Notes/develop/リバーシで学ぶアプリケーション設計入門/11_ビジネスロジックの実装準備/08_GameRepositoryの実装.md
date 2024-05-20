@@ -1,8 +1,22 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## ドメイン層のディレクトリ作成の方針
 
 ### 技術的な観点でディレクトリを分離
 
-modelとrepositoryの配下に大量のファイルが置かれることになる
+model と repository の配下に大量のファイルが置かれることになる
 
 ```bash
 domain/
@@ -22,7 +36,7 @@ domain/
 
 リバーシではドメインモデルの観点でディレクトリを作成する。
 
-##  ディレクトリを作成して各ファイルを移動
+## ディレクトリを作成して各ファイルを移動
 
 以下のような構成にする
 
@@ -40,7 +54,7 @@ domain/
         turnRepository.ts
 ```
 
-## Gameクラスの作成
+## Game クラスの作成
 
 ```ts
 export class Game {
@@ -56,7 +70,7 @@ export class Game {
 }
 ```
 
-## GameRepositoryクラスの作成 
+## GameRepository クラスの作成
 
 ```ts
 import mysql from 'mysql2/promise';
@@ -86,7 +100,7 @@ export class GameRepository {
 }
 ```
 
-## GameServiceクラスの修正
+## GameService クラスの修正
 
 ゲームを保存する箇所を変更
 
@@ -131,7 +145,7 @@ export class GameService {
 }
 ```
 
-## TurnServiceクラスの修正 
+## TurnService クラスの修正
 
 最新のゲームを取得する箇所を修正
 

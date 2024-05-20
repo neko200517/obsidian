@@ -1,3 +1,14 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 仮想環境の構築
 
 ```sh
@@ -5,15 +16,15 @@ python -m venv venv
 venv/Scripts/activate
 ```
 
-## Djangoのインストール
+## Django のインストール
 
 ```sh
-pip install Django 
+pip install Django
 pip install djangorestframework
 pip install django-cors-headers
 ```
 
-## Djangoプロジェクトの作成
+## Django プロジェクトの作成
 
 ```sh
 django-admin startproject rest_api .

@@ -1,9 +1,23 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## main
 
-既存のmain.tsに実装する。
+既存の main.ts に実装する。
 
 ```ts
-// src/main.ts 
+// src/main.ts
 
 import express from 'express';
 import morgan from 'morgan';

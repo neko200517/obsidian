@@ -1,13 +1,25 @@
-## vehicleSliceの作成 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
 
-src/features/vehicleSliceファイルを作成して、各種状態を保存する
+## vehicleSlice の作成
+
+src/features/vehicleSlice ファイルを作成して、各種状態を保存する
 
 ```bash
-mkdir features 
+mkdir features
 touch features/vehicleSlice.js
 ```
 
-### 各種APIアクセス用の関数を定義
+### 各種 API アクセス用の関数を定義
 
 REST API アクセス用のフェッチ関数を作成
 
@@ -190,9 +202,9 @@ export const fetchAsyncDeleteVehicle = createAsyncThunk(
 );
 ```
 
-### vehicleSliceの作成
+### vehicleSlice の作成
 
-ReduxToolkitで各種状態管理、Reducer、後処理の定義
+ReduxToolkit で各種状態管理、Reducer、後処理の定義
 
 ```js
 // src/features/vehicleSlice.js
@@ -387,9 +399,9 @@ export const selectEditedVehicle = (state) => state.vehicle.editedVehicle;
 export default vehicleSlice.reducer;
 ```
 
-## Reducerの登録
+## Reducer の登録
 
-作成したReducerを登録する
+作成した Reducer を登録する
 
 ```js
 // src/app/store.js

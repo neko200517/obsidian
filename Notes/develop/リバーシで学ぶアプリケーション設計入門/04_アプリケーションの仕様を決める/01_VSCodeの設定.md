@@ -1,6 +1,20 @@
-## VSCodeにDraw.io拡張機能を導入する
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-VSCodeにDraw.io integration拡張機能を導入する。
+## VSCode に Draw.io 拡張機能を導入する
+
+VSCode に Draw.io integration 拡張機能を導入する。
 
 ## 設定
 

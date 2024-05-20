@@ -1,3 +1,14 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## ビューの作成
 
 ビューにアクセスした際に処理を実行
@@ -28,13 +39,13 @@ class ProfileUserView(generics.RetrieveUpdateAPIView):
   # ログインユーザーを返す
   def get_object(self):
     return self.request.user
-  
+
   # PUTで呼び出し場合
   def update(self, request, *args, **kwargs):
     # 後で編集可能にするが今はエラーを返す
     respose = {"mesage": "PUT method is not allowed"}
     return Response(respose, status=status.HTTP_405_METHOD_NOT_ALLOWED)
-  
+
   # PATCHで呼び出した場合
   def partial_update(self, request, *args, **kwargs):
     # 後で編集可能にするが今はエラーを返す
@@ -69,13 +80,13 @@ class VehicleViewSet(viewsets.ModelViewSet):
 
 ### 一覧
 
-|   |   |
-|---|---|
-|CreateAPIView|登録（POST）|
-|ListAPIView|一覧取得（GET）|
-|RetrieveAPIView|取得（GET）|
-|UpdateAPIView|更新（PUT、PATCH）|
-|DestroyAPIView|削除（DELETE）|
+|                 |                    |
+| --------------- | ------------------ |
+| CreateAPIView   | 登録（POST）       |
+| ListAPIView     | 一覧取得（GET）    |
+| RetrieveAPIView | 取得（GET）        |
+| UpdateAPIView   | 更新（PUT、PATCH） |
+| DestroyAPIView  | 削除（DELETE）     |
 
 ### 組み合わせ
 
@@ -84,10 +95,10 @@ class VehicleViewSet(viewsets.ModelViewSet):
 **RetrieveDestroyAPIView**（GET、DELETE） = RetrieveAPIView + RetrieveDestroyAPIView  
 **RetrieveUpdateDestroyAPIView**（GET、PUT、PATCH） = RetrieveAPIView + UpdateAPIView + DestroyAPIView
 
-## URLにビューを紐づけ
+## URL にビューを紐づけ
 
-api/urls.pyを新規作成し、先ほど作ったビューとURLを関連付けていく。
-api/urls.py・・・アプリケーションレベルのurls.py
+api/urls.py を新規作成し、先ほど作ったビューと URL を関連付けていく。
+api/urls.py・・・アプリケーションレベルの urls.py
 
 ```python
 # api/urls.py
@@ -117,8 +128,8 @@ urlpatterns = [
 ]
 ```
 
-プロジェクトレベルのurls.pyに作成したアプリケーションレベルのurls.pyを追加してアクセス可能にする。
-rest_api/urls.py・・・プロジェクトレベルのurls.py
+プロジェクトレベルの urls.py に作成したアプリケーションレベルの urls.py を追加してアクセス可能にする。
+rest_api/urls.py・・・プロジェクトレベルの urls.py
 
 ```python
 # rest_api/urls.py

@@ -1,7 +1,21 @@
-## docker-compose.ymlを作成する
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-[02_02_UbuntuにDockerをインストールする]を参考にWSLにDockerをインストール。
-立ち上がっていなかったらWSL2でDockerサービスを起動する。
+## docker-compose.yml を作成する
+
+[02_02_Ubuntu に Docker をインストールする]を参考に WSL に Docker をインストール。
+立ち上がっていなかったら WSL2 で Docker サービスを起動する。
 
 ```bash
 sudo service docker start
@@ -15,7 +29,7 @@ touch reversi/docker-compose.yml
 ```yml
 # docker-compose.yml
 
-version: "3"
+version: '3'
 services:
   mysql:
     image: mysql:8.0.29
@@ -29,7 +43,7 @@ services:
       MYSQL_PASSWORD: password
 ```
 
-## コンテナを起動 
+## コンテナを起動
 
 ```bash
 docker-compose up -d
@@ -57,7 +71,7 @@ docker-compose exec mysql mysql --user=reversi --password=password reversi
 bin/connect_mysql.sh
 ```
 
-mysqlにログインできたら成功
+mysql にログインできたら成功
 
 ## コンテナの終了
 

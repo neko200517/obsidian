@@ -1,6 +1,20 @@
-## openapi.ymlの修正
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-/api/gamesのサンプルを修正
+## openapi.yml の修正
+
+/api/games のサンプルを修正
 
 ```yml
 openapi: '3.0.3'

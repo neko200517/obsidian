@@ -1,6 +1,18 @@
-## Brandコンポーネントの作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
 
-Brandの新規登録、更新、削除画面
+## Brand コンポーネントの作成
+
+Brand の新規登録、更新、削除画面
 
 ```ts
 // src/components/Brand.ts

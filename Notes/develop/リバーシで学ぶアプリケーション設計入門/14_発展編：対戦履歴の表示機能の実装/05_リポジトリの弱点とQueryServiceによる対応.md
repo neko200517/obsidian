@@ -1,7 +1,21 @@
-## リポジトリを利用したあまり良くない実装 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-- それぞれのリポジトリを介してTypeScriptで紐づけを行っている
-- SQLでJOINを実行するのと比較してレスポンス面で不利
+## リポジトリを利用したあまり良くない実装
+
+- それぞれのリポジトリを介して TypeScript で紐づけを行っている
+- SQL で JOIN を実行するのと比較してレスポンス面で不利
 
 ```ts
 import { GameRepository } from '../../domian/model/game/gameRepository';
@@ -74,6 +88,6 @@ export class FindLastGamesUseCase {
 
 ## 改善案
 
-Repositoryを介さずに直接SQLを実装するルートを追加する
+Repository を介さずに直接 SQL を実装するルートを追加する
 
 ![[Pasted image 20240206010014.png]]

@@ -1,7 +1,18 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## ユーザー認証している場合のテスト
 
-api/test_1_user.pyを作成し、テストコードを書いていく。
-ファイル名は必ずtest_xxxxxのような形でtestが接頭語に来ていること。
+api/test_1_user.py を作成し、テストコードを書いていく。
+ファイル名は必ず test_xxxxx のような形で test が接頭語に来ていること。
 
 ```python
 # api/test_1_user.py

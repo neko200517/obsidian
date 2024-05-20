@@ -1,3 +1,17 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## static/index.html
 
 ```html
@@ -101,7 +115,7 @@
 </html>
 ```
 
-## styles.css 
+## styles.css
 
 ```css
 body {

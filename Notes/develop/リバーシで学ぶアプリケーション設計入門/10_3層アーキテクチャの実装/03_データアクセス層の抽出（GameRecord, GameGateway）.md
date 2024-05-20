@@ -1,10 +1,24 @@
-## dataaccessディレクトリの作成 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## dataaccess ディレクトリの作成
 
 ```bash
-mkdir src/dataaccess 
+mkdir src/dataaccess
 ```
 
-## GameRecordクラス
+## GameRecord クラス
 
 テーブル構造のクラス
 
@@ -13,7 +27,7 @@ touch src/dataacess/gameRecord.ts
 ```
 
 ```ts
-// src/dataacess/gameRecord.ts 
+// src/dataacess/gameRecord.ts
 
 export class GameRecord {
   constructor(private _id: number, private _startedAt: Date) {}
@@ -24,7 +38,7 @@ export class GameRecord {
 }
 ```
 
-## GameGatewayクラス
+## GameGateway クラス
 
 テーブルを操作するクラス
 
@@ -33,7 +47,7 @@ touch src/dataacess/gameGateway.ts
 ```
 
 ```ts
-// src/dataacess/gameGateway.ts 
+// src/dataacess/gameGateway.ts
 
 import mysql from 'mysql2/promise';
 import { GameRecord } from './gameRecord';

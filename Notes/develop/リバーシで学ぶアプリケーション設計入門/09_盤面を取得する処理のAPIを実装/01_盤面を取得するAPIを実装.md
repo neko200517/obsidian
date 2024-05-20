@@ -1,15 +1,29 @@
-## 盤面を取得するAPI
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-/api/games/latest/turns/{turnCount}にアクセスするAPIを作成する。
-前提：MySQLに接続する関数を作成してモジュール化した。
+## 盤面を取得する API
 
-1. テーブルから最新のゲーム情報を取得 
-2. 最新のゲームと指定したturnCountのターンを取得 
-3. ターンの盤面を取得 
-4. 取得した盤面を8 x 8の2次元配列にマッピングしてjson形式でレスポンスを返す
+/api/games/latest/turns/{turnCount}にアクセスする API を作成する。
+前提：MySQL に接続する関数を作成してモジュール化した。
+
+1. テーブルから最新のゲーム情報を取得
+2. 最新のゲームと指定した turnCount のターンを取得
+3. ターンの盤面を取得
+4. 取得した盤面を 8 x 8 の 2 次元配列にマッピングして json 形式でレスポンスを返す
 
 ```ts
-// main.ts 
+// main.ts
 
 // 中略
 
@@ -70,5 +84,4 @@ const connectMySql = async () => {
 };
 
 // 中略
-
 ```

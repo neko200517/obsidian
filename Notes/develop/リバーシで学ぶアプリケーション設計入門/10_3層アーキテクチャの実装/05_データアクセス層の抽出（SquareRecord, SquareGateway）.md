@@ -1,4 +1,18 @@
-## SquareRecoredクラス
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## SquareRecored クラス
 
 ```bash
 touch dataaccess/squareRecord.ts
@@ -28,7 +42,7 @@ export class SquareRecord {
 }
 ```
 
-## SquareGatewayクラス
+## SquareGateway クラス
 
 ```bash
 touch dataaccess/squareGateway.ts

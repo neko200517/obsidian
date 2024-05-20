@@ -1,5 +1,18 @@
-```ts
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
+```ts
 // 中略
 
 app.use(express.json()); // jsonを受け取るための記述
@@ -114,5 +127,4 @@ const connectMySql = async () => {
 };
 
 // 中略
-
 ```

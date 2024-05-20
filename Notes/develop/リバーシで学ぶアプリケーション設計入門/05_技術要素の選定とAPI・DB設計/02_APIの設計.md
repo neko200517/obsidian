@@ -1,10 +1,24 @@
-## APIの設計
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## API の設計
 
 ```bash
 touch webapi-design-memo.md
 ```
 
-機能一覧の機能をもとにそれぞれのAPIを設計する。
+機能一覧の機能をもとにそれぞれの API を設計する。
 画面イメージや概念モデルも参考に漏れがないかを練っていく。
 
 ## 対戦を開始する

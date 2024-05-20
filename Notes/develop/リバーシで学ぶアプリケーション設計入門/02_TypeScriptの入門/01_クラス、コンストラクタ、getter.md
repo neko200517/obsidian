@@ -1,3 +1,17 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## クラス、コンストラクタ
 
 ```ts
@@ -21,8 +35,9 @@ const f1 = new Fraction(1, 2);
 ## getter
 
 変更点：
-- プロパティにprivateを追加
-- 各プロパティにgetterを定義
+
+- プロパティに private を追加
+- 各プロパティに getter を定義
 
 ```ts
 // クラス定義
@@ -58,7 +73,8 @@ console.log(f1.denominator);
 ## コンストラクタの省略
 
 コンストラクタで内部のメンバに値を設定する使い方には省略する書き方がある
-変更点 
+変更点
+
 - クラスメンバを削除
 - コンストラクタにメンバと同じ定義を書く
 - コンストラクタの内容を削除

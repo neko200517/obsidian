@@ -1,3 +1,11 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - postgresql
+  - tips
+aliases:
+  - <% tp.file.title %>
+---
 ## 概要
 
 ローカルにインストールした PostgreSQL を使うための手順。

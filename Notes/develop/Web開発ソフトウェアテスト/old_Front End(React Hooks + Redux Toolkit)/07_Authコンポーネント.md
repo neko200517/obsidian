@@ -1,4 +1,16 @@
-## Authコンポーネントの作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
+
+## Auth コンポーネントの作成
 
 ユーザー登録、ログイン画面を作成する
 

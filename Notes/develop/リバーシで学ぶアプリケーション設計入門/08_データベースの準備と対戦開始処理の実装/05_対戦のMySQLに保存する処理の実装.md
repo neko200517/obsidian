@@ -1,3 +1,17 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 必要なパッケージのインストール
 
 ```bash
@@ -37,5 +51,4 @@ app.post('/api/games', async (req, res) => {
 });
 
 // 中略
-
 ```

@@ -1,6 +1,18 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## プロジェクト作成
 
-Viteでプロジェクトを作成する
+Vite でプロジェクトを作成する
 
 ```bash
 npm vite@latest
@@ -73,10 +85,7 @@ npm i -D vitest jsdom @testing-library/jest-dom @testing-library/react @testing-
     "vitest": "^1.1.0"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   }
 }
 ```

@@ -1,6 +1,17 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## Settings.py
 
-rest_api/settings.pyに設定を追加する。
+rest_api/settings.py に設定を追加する。
 
 ```python
 # rest_api/settngs.py
@@ -40,7 +51,7 @@ REST_FRAMEWORK = {
 
 # models.py
 
-api/models.pyを編集
+api/models.py を編集
 
 ```python
 # api/models.py
@@ -86,15 +97,15 @@ class Vehicle(models.Model):
     Brand,
     on_delete=models.CASCADE
   )
-  
+
   def __str__(self):
     return self.vehicle_name
 ```
 
 ## マイグレーション
 
-models.pyに定義したSegment, Brand, Vehicleをマイグレーションする。
-デフォルトでdb.sqlite3に保存される。
+models.py に定義した Segment, Brand, Vehicle をマイグレーションする。
+デフォルトで db.sqlite3 に保存される。
 
 ```sh
 python manage.py makemigrations
@@ -103,10 +114,10 @@ python manage.py migrate
 
 ## admin.py
 
-ダッシュボードに作成したテーブルを追加するため、admin.pyにモデルを追加
+ダッシュボードに作成したテーブルを追加するため、admin.py にモデルを追加
 
 ```python
-# api/admin.py 
+# api/admin.py
 from django.contrib import admin
 from .models import Segment, Brand, Vehicle
 
@@ -117,18 +128,18 @@ admin.site.register(Vehicle)
 
 ## スーパーユーザーの作成
 
-Djangoのダッシュボードにログインするためスーパーユーザーを作成する。
+Django のダッシュボードにログインするためスーパーユーザーを作成する。
 
 ```sh
 python manage.py createsuperuser
-# username 
+# username
 # email
 # password
 ```
 
 ## 管理用ダッシュボードにアクセス
 
-開発用サーバを立ち上げ```http://127.0.0.1:8000/admin/```にアクセス。
+開発用サーバを立ち上げ`http://127.0.0.1:8000/admin/`にアクセス。
 
 ```sh
 python manage.py runserver
@@ -140,15 +151,15 @@ python manage.py runserver
 
 - band name: Tesla
 
-### Segment 
+### Segment
 
 - segment name: Sedan
 
-### Vehicle 
+### Vehicle
 
 - User: super
 - Vehicle name: MODEL S
 - Release year: 2020
 - Price: 300.12
-- Segment: Sedan 
-- Brand: Tesla 
+- Segment: Sedan
+- Brand: Tesla

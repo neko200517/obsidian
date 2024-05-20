@@ -1,11 +1,25 @@
-## Repositoryパターンの追加
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-domain層にRepositoryを追加
-⇒dataaccess層をinfrastructureに変更
+## Repository パターンの追加
+
+domain 層に Repository を追加
+⇒dataaccess 層を infrastructure に変更
 
 ![[Pasted image 20240131075734.png]]
 
-## TurnRepsitoryクラス
+## TurnRepsitory クラス
 
 ```bash
 touch domain/turnRepository.ts
@@ -103,9 +117,9 @@ export class TurnRepository {
 }
 ```
 
-## TurnServiceクラスの修正
+## TurnService クラスの修正
 
-TurnRepositoryパターンを導入してすっきりと実装する。
+TurnRepository パターンを導入してすっきりと実装する。
 
 ```ts
 import { connectMySql } from '../dataaccess/connection';

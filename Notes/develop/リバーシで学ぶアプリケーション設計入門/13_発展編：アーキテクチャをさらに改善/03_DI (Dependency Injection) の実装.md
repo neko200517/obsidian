@@ -1,9 +1,23 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 概要
 
-アプリケーション層⇒インフラストラクチャ層に依存していたものを修正。
+アプリケーション層 ⇒ インフラストラクチャ層に依存していたものを修正。
 プレゼンテーション層から依存性を注入して依存関係を分離させる。
 
-## GameServiceの修正
+## GameService の修正
 
 コンストラクタでインタフェースを受け取るように実装
 
@@ -21,7 +35,7 @@ export class GameService {
 }
 ```
 
-## GameRouterの修正
+## GameRouter の修正
 
 依存性を注入する
 
@@ -39,7 +53,7 @@ const gameService = new GameService(
 // 中略
 ```
 
-## TurnServiceの修正 
+## TurnService の修正
 
 コンストラクタでインタフェースを受け取るように実装
 
@@ -55,11 +69,11 @@ export class TurnService {
     private _gameRepository: GameRepository,
     private _gameResultRepositry: GameResultRepository
   ) {}
-// 中略
+  // 中略
 }
 ```
 
-## TurnRouterの修正 
+## TurnRouter の修正
 
 依存性の注入する
 

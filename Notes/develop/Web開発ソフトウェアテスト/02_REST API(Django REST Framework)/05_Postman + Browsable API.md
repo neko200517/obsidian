@@ -1,17 +1,28 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## ユーザーを作成する
 
 http://localhost:8000/api/create にアクセスし、任意のユーザーを作成する
 
 ## トークンを取得する
 
-Postmanなどで以下のリクエストを実行する。
+Postman などで以下のリクエストを実行する。
 
 POST http://localhost:8000/api/auth
 
 ```json
 {
-	"username": "<作成したユーザー名>",
-	"password": "<作成したパスワード>"
+  "username": "<作成したユーザー名>",
+  "password": "<作成したパスワード>"
 }
 ```
 
@@ -19,7 +30,7 @@ POST http://localhost:8000/api/auth
 
 ## トークンをリクエストヘッダに付与して認証が必要なページにアクセスする
 
-ChromeのModHeaderなどにトークンを付与して認証が必要なページにアクセスする。
+Chrome の ModHeader などにトークンを付与して認証が必要なページにアクセスする。
 
 例）
 
@@ -29,7 +40,7 @@ Authorization = token xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## テスト
 
-以下の画面にアクセスし、CRUD操作が行えるかテストする。
+以下の画面にアクセスし、CRUD 操作が行えるかテストする。
 
 http://localhost:8000/api/profile
 http://localhost:8000/api/segments

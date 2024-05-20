@@ -1,17 +1,31 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 概要
 
-ドメイン層⇒インフラストラクチャ層の依存方向を
-インフラストラクチャ層⇒ドメイン層に修正する
+ドメイン層 ⇒ インフラストラクチャ層の依存方向を
+インフラストラクチャ層 ⇒ ドメイン層に修正する
 
-## infrastructur/repositoryディレクトリの作成
+## infrastructur/repository ディレクトリの作成
 
 ```bash
-mkdir src/infrastructur/repository 
+mkdir src/infrastructur/repository
 ```
 
-## GameMySQLRepositoryクラスの作成 
+## GameMySQLRepository クラスの作成
 
-GameRepositoryの実装を移動
+GameRepository の実装を移動
 
 ```bash
 mkdir src/infrastructur/repository/game
@@ -47,9 +61,9 @@ export class GameMySQLRepository implements GameRepository {
 }
 ```
 
-## GameRepositoryの修正
+## GameRepository の修正
 
-interfaceに変更
+interface に変更
 
 ```ts
 import mysql from 'mysql2/promise';
@@ -65,13 +79,14 @@ export interface GameRepository {
 
 ## その他
 
-以下のファイルをsrc/infrastructur/repository/gameに移動 
+以下のファイルを src/infrastructur/repository/game に移動
+
 - gameGateway.ts
 - gameRecord.ts
 
-## GameResultMySQLRepositoryクラスの作成 
+## GameResultMySQLRepository クラスの作成
 
-GameResultRepositoryの実装を移動
+GameResultRepository の実装を移動
 
 ```bash
 mkdir src/infrastructur/repository/gameResult
@@ -119,9 +134,9 @@ export class GameResultMySQLRepository implements GameResultRepository {
 }
 ```
 
-## GameResultRepositoryの修正
+## GameResultRepository の修正
 
-interfaceに変更
+interface に変更
 
 ```ts
 import mysql from 'mysql2/promise';
@@ -138,13 +153,14 @@ export interface GameResultRepository {
 
 ## その他
 
-以下のファイルをsrc/infrastructur/repository/gameResultに移動 
-- gameResultGateway.ts 
-- gameResultRecord.ts 
+以下のファイルを src/infrastructur/repository/gameResult に移動
 
-## TurnMySQLRepositoryクラスの作成 
+- gameResultGateway.ts
+- gameResultRecord.ts
 
-turnRepositoryの実装を移動
+## TurnMySQLRepository クラスの作成
+
+turnRepository の実装を移動
 
 ```bash
 mkdir src/infrastructur/repository/turn
@@ -249,9 +265,9 @@ export class TurnMySQLRepository implements TurnRepository {
 }
 ```
 
-## TurnRepositoryの修正
+## TurnRepository の修正
 
-interfaceに変更
+interface に変更
 
 ```ts
 import mysql from 'mysql2/promise';
@@ -272,10 +288,11 @@ export interface TurnRepository {
 
 ## その他
 
-以下のファイルをsrc/infrastructur/repository/gameResultに移動
-- turnGateway.ts 
-- turnRecord.ts 
-- moveGateway.ts 
-- moveRecord.ts 
-- squareGateway.ts 
+以下のファイルを src/infrastructur/repository/gameResult に移動
+
+- turnGateway.ts
+- turnRecord.ts
+- moveGateway.ts
+- moveRecord.ts
+- squareGateway.ts
 - squareRecord.ts

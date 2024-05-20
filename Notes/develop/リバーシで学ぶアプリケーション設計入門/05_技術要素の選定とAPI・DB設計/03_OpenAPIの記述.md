@@ -1,20 +1,34 @@
-## OpenAPIとは
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
 
-- OpenAPIはWebAPIの定義を記述するための仕様
-- WebAPIの定義を独自の形式ではなくOpenAPIの形式で書けば様々なツールで読み込んで活用することができる
+## OpenAPI とは
 
-## VSCodeに拡張機能を入れる
+- OpenAPI は WebAPI の定義を記述するための仕様
+- WebAPI の定義を独自の形式ではなく OpenAPI の形式で書けば様々なツールで読み込んで活用することができる
 
-Swagger Viewerを導入する
+## VSCode に拡張機能を入れる
 
-## ymlファイルを作成する
+Swagger Viewer を導入する
+
+## yml ファイルを作成する
 
 ```bash
 touch openapi.yaml
 ```
 
-APIの設計で作成したメモを参考にOpenAPI形式のymlファイルを作成する。
-パスの名前を選択した状態でAlt+Shift+Pを押下するとSwagger Viewerが起動する。
+API の設計で作成したメモを参考に OpenAPI 形式の yml ファイルを作成する。
+パスの名前を選択した状態で Alt+Shift+P を押下すると Swagger Viewer が起動する。
 
 ### メタ情報を書く
 
@@ -63,75 +77,75 @@ paths:
 ### /api/games/latest/turns/{turnCount}
 
 ```yml
-  /api/games/latest/turns/{turnCount}:
-    parameters:
-      - name: turnCount
-        in: path
-        schema:
-          type: integer
-        required: true
-    get:
-      responses:
-        200:
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  typeCount:
-                    type: integer
-                    example: 1
-                  board:
-                    type: array
-                    example:
-                      [
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                        [0, 0, 0, 1, 2, 0, 0, 0],
-                        [0, 0, 0, 2, 1, 0, 0, 0],
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                        [0, 0, 0, 0, 0, 0, 0, 0],
-                      ]
-                  nextDisc:
-                    type: integer
-                    example: 1
-                  winnerDisc:
-                    type: integer
-                    example: 1
-```
-
-### /api/games/latest/turns
-
-```yml
-  /api/games/latest/turns:
-    post:
-      requestBody:
+/api/games/latest/turns/{turnCount}:
+  parameters:
+    - name: turnCount
+      in: path
+      schema:
+        type: integer
+      required: true
+  get:
+    responses:
+      200:
+        description: OK
         content:
           application/json:
             schema:
               type: object
               properties:
-                turnCount:
+                typeCount:
                   type: integer
                   example: 1
-                move:
-                  type: object
-                  properties:
-                    disc:
-                      type: integer
-                      example: 1
-                    x:
-                      type: integer
-                      example: 0
-                    y:
-                      type: integer
-                      example: 0
-      responses:
-        201:
-          description: Created
+                board:
+                  type: array
+                  example:
+                    [
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                      [0, 0, 0, 1, 2, 0, 0, 0],
+                      [0, 0, 0, 2, 1, 0, 0, 0],
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                      [0, 0, 0, 0, 0, 0, 0, 0],
+                    ]
+                nextDisc:
+                  type: integer
+                  example: 1
+                winnerDisc:
+                  type: integer
+                  example: 1
+```
+
+### /api/games/latest/turns
+
+```yml
+/api/games/latest/turns:
+  post:
+    requestBody:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              turnCount:
+                type: integer
+                example: 1
+              move:
+                type: object
+                properties:
+                  disc:
+                    type: integer
+                    example: 1
+                  x:
+                    type: integer
+                    example: 0
+                  y:
+                    type: integer
+                    example: 0
+    responses:
+      201:
+        description: Created
 ```
 
 ## 全体

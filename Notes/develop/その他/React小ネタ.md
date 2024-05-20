@@ -1,3 +1,11 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - react
+  - tips
+aliases:
+  - <% tp.file.title %>
+---
 ## React.memo
 
 メモ化していない場合：A と B が出力される。

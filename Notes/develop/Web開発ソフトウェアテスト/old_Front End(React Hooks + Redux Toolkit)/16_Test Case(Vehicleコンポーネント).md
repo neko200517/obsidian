@@ -1,13 +1,24 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
+
 ## テストケースを書いていく
 
-Seglment.test.jsファイルを作成し、テストを記述していく
+Seglment.test.js ファイルを作成し、テストを記述していく
 
 ```bash
 touch src/tests/Vehicle.test.js
 ```
 
 ```js
-
 // src/tests/Vehicle.test.js
 
 import React from 'react';

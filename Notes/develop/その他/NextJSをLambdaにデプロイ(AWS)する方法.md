@@ -1,3 +1,14 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - nextjs
+  - lambda
+  - aws
+  - tips
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 概要
 
 AWS Lambda + API Gateway + ECR + StandaloneモードでNextJSをデプロイ、公開する。

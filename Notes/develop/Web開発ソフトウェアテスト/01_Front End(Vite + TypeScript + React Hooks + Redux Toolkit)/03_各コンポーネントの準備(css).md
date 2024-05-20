@@ -1,3 +1,15 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## src/App.module.css
 
 ```css
@@ -29,7 +41,7 @@
 }
 ```
 
-## src/components/MainPage.module.css 
+## src/components/MainPage.module.css
 
 ```css
 .mainPage__root {
@@ -41,7 +53,7 @@
 }
 ```
 
-## src/components/Brand.module.css 
+## src/components/Brand.module.css
 
 ```css
 .brand__status {
@@ -54,7 +66,7 @@
 }
 ```
 
-## src/components/Segment.module.css 
+## src/components/Segment.module.css
 
 ```css
 .segment__root {
@@ -67,7 +79,7 @@
 }
 ```
 
-## src/components/Vehicle.module.css 
+## src/components/Vehicle.module.css
 
 ```css
 .vehicle__status {
@@ -82,4 +94,3 @@
   margin: 10px;
 }
 ```
-

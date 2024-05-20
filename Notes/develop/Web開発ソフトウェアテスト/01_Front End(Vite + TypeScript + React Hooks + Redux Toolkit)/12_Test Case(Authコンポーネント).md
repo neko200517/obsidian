@@ -1,6 +1,18 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
 ## テストファイルの作成
 
-src/testsディレクトリを作成し、Auth.test.jsファイルを作成する
+src/tests ディレクトリを作成し、Auth.test.js ファイルを作成する
 
 ```bash
 mkdir src/tests
@@ -9,7 +21,7 @@ touch Auth.test.ts
 
 ## モック部分を記述する
 
-モックサーバーとReduxを組み合わせてテストを記述していく
+モックサーバーと Redux を組み合わせてテストを記述していく
 
 ```ts
 // src/tests/Auth.test.ts

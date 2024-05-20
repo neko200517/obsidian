@@ -1,3 +1,13 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - wsl
+  - tips
+aliases:
+  - <% tp.file.title %>
+---
+## 概要
+
 Dockerで複数環境を切り替えるよりも手軽に検証環境の破棄と切り替えが可能。
 
 ## 手順

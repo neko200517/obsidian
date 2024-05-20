@@ -1,13 +1,27 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
 ## 構成
 
-以下の構成で新しくqueryディレクトリを作成する。
+以下の構成で新しく query ディレクトリを作成する。
 
 ```bash
 ./src
 ├─application
 │  ├─query
 │  │      findLastGamesQueryService.ts # ←追加
-│  │      
+│  │
 │  └─useCase
 │          findLastGamesUseCase.ts # ←追加
 │
@@ -22,7 +36,7 @@
 └─presentation
 ```
 
-## findLastGamesQueryServiceクラス
+## findLastGamesQueryService クラス
 
 データモデルやインタフェースの定義
 
@@ -72,9 +86,9 @@ export interface FindLastGamesQueryService {
 }
 ```
 
-## FindLastGamesMySQLQueryServiceクラス
+## FindLastGamesMySQLQueryService クラス
 
-SQLの実装
+SQL の実装
 
 ```ts
 import mysql from 'mysql2/promise';
@@ -125,7 +139,7 @@ limit ?
 }
 ```
 
-## findLastGamesUseCase.ts 
+## findLastGamesUseCase.ts
 
 ユースケースの実装
 

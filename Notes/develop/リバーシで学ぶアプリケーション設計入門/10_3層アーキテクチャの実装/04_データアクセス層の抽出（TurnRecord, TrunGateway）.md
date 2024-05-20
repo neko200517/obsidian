@@ -1,4 +1,18 @@
-## TurnRecordクラス
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - typescript
+  - express
+  - 設計
+  - オブジェクト指向
+  - DI
+  - 3層アーキテクチャ
+  - デザインパターン
+aliases:
+  - <% tp.file.title %>
+---
+
+## TurnRecord クラス
 
 ```bash
 touch dataacess/TurnRecord.ts
@@ -24,7 +38,7 @@ export class TurnRecord {
 }
 ```
 
-## TurnGatewayクラス
+## TurnGateway クラス
 
 ```bash
 touch dataacess/TurnGateway.ts

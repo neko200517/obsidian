@@ -1,9 +1,21 @@
-## vehicleSliceの作成 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
 
-src/features/vehicleSliceファイルを作成して、各種状態を保存する
+## vehicleSlice の作成
+
+src/features/vehicleSlice ファイルを作成して、各種状態を保存する
 
 ```bash
-mkdir features 
+mkdir features
 touch features/vehicleSlice.ts
 ```
 
@@ -501,12 +513,12 @@ export const selectEditedVehicle = (state: { vehicle: EditedVehicleState }) =>
 export default vehicleSlice.reducer;
 ```
 
-## Reducerの登録
+## Reducer の登録
 
-作成したReducerを登録する
+作成した Reducer を登録する
 
 ```ts
-// src/store.ts 
+// src/store.ts
 
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import authReducer from '../features/authSlice';
@@ -528,4 +540,3 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   Action<string>
 >;
 ```
-

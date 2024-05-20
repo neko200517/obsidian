@@ -1,6 +1,18 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
+
 ## テストケースを書いていく
 
-MainPage.test.jsファイルを作成し、テストを記述していく
+MainPage.test.js ファイルを作成し、テストを記述していく
 
 ```bash
 touch src/tests/MainPage.test.js

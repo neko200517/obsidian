@@ -1,6 +1,18 @@
-## MainPageコンポーネントの作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - javascript
+  - react-hooks
+  - redux-toolkit
+  - test
+  - old
+aliases:
+  - <% tp.file.title %>
+---
 
-ログアウト、ユーザー情報の表示、Segment、Brand、Vehicle一覧を表示する
+## MainPage コンポーネントの作成
+
+ログアウト、ユーザー情報の表示、Segment、Brand、Vehicle 一覧を表示する
 
 ```js
 // src/components/MainPage.js
@@ -75,4 +87,4 @@ const MainPage = () => {
 export default MainPage;
 ```
 
-MaterialUIのGridコンポーネントを利用してグリッドレイアウトを実現している
+MaterialUI の Grid コンポーネントを利用してグリッドレイアウトを実現している

@@ -1,9 +1,21 @@
-## authSliceの作成 
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - vite
+  - typescript
+  - react-hooks
+  - redux-toolkit
+  - test
+aliases:
+  - <% tp.file.title %>
+---
 
-src/features/authSliceファイルを作成して、ログインしたユーザー情報を保存する
+## authSlice の作成
+
+src/features/authSlice ファイルを作成して、ログインしたユーザー情報を保存する
 
 ```bash
-mkdir features 
+mkdir features
 touch features/authSlice.ts
 ```
 
@@ -105,9 +117,9 @@ export const selectProfile = (state: { auth: AuthState }) => state.auth.profile;
 export default authSlice.reducer;
 ```
 
-## Reducerの登録
+## Reducer の登録
 
-作成したReducerを登録する
+作成した Reducer を登録する
 
 ```bash
 mkdir src/app
@@ -116,7 +128,7 @@ touch src/hooks.ts
 ```
 
 ```ts
-// src/hooks.ts 
+// src/hooks.ts
 
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from './store';
@@ -127,7 +139,7 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 ```
 
 ```ts
-// src/store.ts 
+// src/store.ts
 
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import authReducer from '../features/authSlice';

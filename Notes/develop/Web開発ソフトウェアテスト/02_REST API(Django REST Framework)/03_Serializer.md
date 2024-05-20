@@ -1,4 +1,16 @@
-Modelをdict型に変換するシリアライザーを作成
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - python
+  - django
+  - rest-api
+  - test
+aliases:
+  - <% tp.file.title %>
+---
+
+Model を dict 型に変換するシリアライザーを作成
+
 ## シリアライザーの作成
 
 ```python
@@ -63,4 +75,3 @@ class VehicleSerializer(serializers.ModelSerializer):
         extra_kwargs = {"user": {"read_only": True}}
 
 ```
-
