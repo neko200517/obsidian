@@ -1,0 +1,66 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - GraphQL
+  - Prisma
+aliases:
+  - <% tp.file.title %>
+---
+## prisma/schema.prisma
+
+- Userモデルを作成
+- LinkにUserを紐づける
+- @id：プライマリーキー
+- @default：デフォルト値
+- @unique：ユニーク属性
+
+```ts
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Link {
+  id Int @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  description String
+  url String
+  postedBy User? @relation(fields: [postedById], references: [id])
+  postedById Int?
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  name String
+  email String @unique
+  password String
+  links Link[]
+}
+```
+
+## 外部キー制約の追加
+
+- ? はオプショナル。! は必須項目
+
+```ts
+model Link {
+  // ... 
+  postedBy User? @relation(fields: [postedById], references: [id])
+  postedById Int?
+}
+
+model User {
+  // ... 
+  links Link[]
+}
+```
