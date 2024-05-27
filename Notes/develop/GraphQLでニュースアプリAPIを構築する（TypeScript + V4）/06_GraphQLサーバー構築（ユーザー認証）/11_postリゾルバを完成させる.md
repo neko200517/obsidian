@@ -22,7 +22,7 @@ export type Context = {
 ## src/resolvers/Mutation.ts 
 
 - postedByに { connect: { id: userId } } という形式で割り当てる
-- connectに対応したUserテーブルと外部結合する
+- connectで外部のテーブルと結合する
 
 ```ts
 // ...
