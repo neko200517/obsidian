@@ -1,6 +1,8 @@
 ---
 date: <% tp.date.now("YYYY-MM-DD") %>
-tags: 
+tags:
+  - GraphQL
+  - ApolloServer
 aliases:
   - <% tp.file.title %>
 ---

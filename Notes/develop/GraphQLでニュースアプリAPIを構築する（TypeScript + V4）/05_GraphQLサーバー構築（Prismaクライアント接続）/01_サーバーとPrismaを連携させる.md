@@ -2,9 +2,9 @@
 date: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - GraphQL
-  - ApploServer
   - Prisma
   - ORM
+  - ApolloServer
 aliases:
   - <% tp.file.title %>
 ---

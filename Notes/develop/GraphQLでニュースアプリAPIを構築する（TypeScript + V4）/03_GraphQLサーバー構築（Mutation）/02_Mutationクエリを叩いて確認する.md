@@ -2,7 +2,7 @@
 date: <% tp.date.now("YYYY-MM-DD") %>
 tags:
   - GraphQL
-  - ApploServer
+  - ApolloServer
 aliases:
   - <% tp.file.title %>
 ---
