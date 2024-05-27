@@ -1,3 +1,12 @@
+---
+date: <% tp.date.now("YYYY-MM-DD") %>
+tags:
+  - GraphQL
+  - Prisma
+  - Subscription
+aliases:
+  - <% tp.file.title %>
+---
 ## src/schema.graphql
 
 - Mutationに vote 関数を追加
