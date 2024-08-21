@@ -1,5 +1,7 @@
 ## コメント投稿API
 
+- app router からは app/api/xxx/route.ts の形式で呼ぶようになった
+
 ### app/api/comment/route.ts
 
 ```ts
